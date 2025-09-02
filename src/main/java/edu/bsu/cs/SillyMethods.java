@@ -8,11 +8,8 @@ public class SillyMethods {
     public String countTo(int count) {
         StringBuilder countSequence = new StringBuilder();
         for(int i = 0; i <= count; i++){
-            countSequence.append(i);
-            if(i != count){
-                countSequence.append(" ");
-            }
+            countSequence.append(i).append(" ");
         }
-        return countSequence.toString();
+        return countSequence.toString().trim();
     }
 }
